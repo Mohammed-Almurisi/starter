@@ -64,3 +64,7 @@ Route::get('/', function (){
 Route::get('/dashboard', function (){
     return 'dashboard';
 });
+
+Route::get('/redirect/{service}','SocialiteController@redirect');
+
+Route::get('/callback/{service}','SocialiteController@callback');
